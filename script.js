@@ -14,9 +14,17 @@ const rightImage = document.querySelector(".right-image");
 let number = 1;
 image.setAttribute("src", `images/${number}.jpg`);
 
+// ! это рандомно
+// function random() {
+//     const data = Math.floor(Math.random() * (4 - 1)) + 1;
+//     image.setAttribute("src", `images/${data}.jpg`);
+// }
+
+// ! это по порядку
 function random() {
-    const data = Math.floor(Math.random() * (4 - 1)) + 1;
-    image.setAttribute("src", `images/${data}.jpg`);
+    number = number + 1;
+    if (number === 5) number = 1;
+    image.setAttribute("src", `images/${number}.jpg`);
 }
 
 rightImage.addEventListener("click", e => {
