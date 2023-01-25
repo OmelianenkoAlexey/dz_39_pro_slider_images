@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ! dz39*/
+
+.container-DZ39 {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 200px;
+    background-color: #fff;
+}
+
+.left-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.picture {
+    width: 500px;
+}
+
+.image {
+    width: 100%;
+}
+
+.right {
+    width: 200px;
+    background-color: #fff;
+}
+
+.right-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
